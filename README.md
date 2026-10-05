@@ -31,6 +31,7 @@ Dajet is in active development. It is built on the engine inside every Mac — *
 - Current base: fork of [Search](https://github.com/officecommun/search) by Office Commun (MIT)
 - Target: macOS 14+
 - First public build: watch this repo or [dajet.ru/browser](https://dajet.ru/browser)
+- Code (active development): [bestdeejay-design/dajet-browser](https://github.com/bestdeejay-design/dajet-browser)
 
 ## License & credits
 
