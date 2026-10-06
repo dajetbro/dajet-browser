@@ -1,56 +1,75 @@
 # Dajet
 
-**Silent to the network. Loud in style.**
+Молчит в сеть. Говорит стилем.
 
-Dajet is a minimal web browser for macOS, built by the [Dajet design studio](https://dajet.ru). Its start screen makes **zero network requests** — widgets run entirely on your Mac's own resources: calendar, reminders, battery, media, time. No config pulled from the cloud, no tips of the day, no telemetry. Open a network monitor and launch Dajet: silence.
+**~6 MB** · macOS 14+ · WebKit · бесплатно
 
-> Русская версия ниже · [Скачать (скоро) →](https://dajet.ru/browser)
-
----
-
-## The idea
-
-Every major browser treats its start page as a storefront — someone else's services, promoted tiles, "helpful" content fetched from the cloud. Dajet's new-tab page is a quiet room: a beautiful theme, local widgets, your links. That's it.
-
-The silence is **verifiable, not promised**. We consider it part of the product, tested in every release checklist.
-
-## What Dajet stands on
-
-- **Minimalism** — in interface, weight and memory. If it can be removed, it is removed.
-- **Silence** — zero network requests without an explicit action by you. No telemetry; update checks happen only when you press the button.
-- **Themes as art** — every theme is a published design work with a named author. The start screen is the studio's permanent gallery. Themes are plain CSS + wallpapers + a manifest — designers don't write code.
-
-## Local widgets
-
-Clock, calendar, reminders, pomodoro timer, battery & system state, now-playing, notes, quick links — all powered by macOS itself. The category "online widgets" does not exist in Dajet and never will.
-
-## Status
-
-Dajet is in active development. It is built on the engine inside every Mac — **WebKit** — which is why it stays small and opens instantly.
-
-- Current base: fork of [Search](https://github.com/officecommun/search) by Office Commun (MIT)
-- Target: macOS 14+
-- First public build: watch this repo or [dajet.ru/browser](https://dajet.ru/browser)
-- Code (active development): [bestdeejay-design/dajet-browser](https://github.com/bestdeejay-design/dajet-browser)
-
-## License & credits
-
-Dajet is [MIT-licensed](LICENSE). It stands on the shoulders of [Search](https://github.com/officecommun/search) — thank you, [Office Commun](https://officecommun.com), for a beautiful, quiet browser and a generous license.
+![Dajet browser](.github/screenshot.png)
 
 ---
 
-## Русская версия
+## Что это
 
-**Dajet** — минималистичный браузер для macOS от дизайн-студии [Dajet](https://dajet.ru).
+Ты открываешь Dajet. Экран. Одна строка ввода. Ничего больше.
 
-**Молчит в сеть. Говорит стилем.** Стартовый экран не делает ни одного сетевого запроса: виджеты (часы, календарь, напоминания, батарея, «сейчас играет», заметки, быстрые ссылки) работают исключительно на ресурсах вашего Mac. Без телеметрии, без «советов дня», без аккаунтов. Проверьте монитором сети — тишина.
+Вводишь адрес — ты на странице. Вводишь слова — ты ищешь. Никаких боковых меню, промо-плиток, «советов дня» и вкладок, которые на тебя смотрят.
 
-Три кита Dajet:
+## Принцип
 
-1. **Минимализм** — в интерфейсе, весе и памяти.
-2. **Тишина** — ноль обращений в сеть без вашего действия; обновления — только по кнопке.
-3. **Темы как искусство** — каждая тема издаётся с именем автора; стартовый экран — постоянная галерея студии.
+Dajet занимает позицию, которую большие браузеры не могут скопировать: **дом, который молчит**.
 
-Статус: в активной разработке на движке WebKit (форк [Search](https://github.com/officecommun/search), MIT). Первый публичный билд — следите за репозиторием или [dajet.ru/browser](https://dajet.ru/browser).
+Открой Network Monitor. Запусти Dajet. Ноль соединений. Без твоего действия — ничего не уходит в сеть. Это не обещание. Это проверяемое заявление, и оно входит в релиз-чеклист.
 
-Лицензия: [MIT](LICENSE).
+- Нет телеметрии
+- Нет аккаунтов и облака
+- Нет рекламы
+- Нет «онлайн-виджетов» (погода, новости, курсы)
+- Обновления — только по запросу
+
+## Что умеет
+
+- **Одна строка ввода** — адрес или поиск. Подсказки из твоей истории, ничего не уходит в сеть до Enter
+- **Вкладки** — `⌘T` новая, `⌘W` закрыть. Сверху или слева
+- **Закреплённые вкладки** — сожмутся до иконки, не мешают
+- **Split View** — две страницы рядом (`⌥⌘N`)
+- **Блокировщик рекламы** — на уровне сети, до рендера
+- **Скрой элемент навсегда** — `⇧⌘H`, кликни на cookie-баннер
+- **Режим чтения** — `⇧⌘R`
+- **Плавающее видео** — `⇧⌘P`
+- **Пароли в macOS keychain** — зашифровано системой
+- **Chrome-расширения** — вставь ссылку Chrome Web Store (macOS 15.4+)
+
+## Стартовый экран
+
+Сейчас — чистая тишина: пустой экран и строка ввода.
+
+Форма стартового экрана — открытое решение проекта. Варианты и демо: [docs/CHOICE.md](docs/CHOICE.md) · [docs/DEMOS.md](docs/DEMOS.md). Темы и виджеты отложены и не входят в первую версию.
+
+## Privacy
+
+| Что | Где | Кто может читать |
+|---|---|---|
+| Пароли | macOS login keychain | Dajet |
+| История, закладки | `~/Library/Application Support/Dajet/` | Ты |
+| Cookies | хранилище WebKit | Сайты |
+| Всё остальное | Нигде | — |
+
+Приватная вкладка (`⇧⌘N`) не оставляет ничего после закрытия.
+
+## Установка
+
+**Скачать:** [bro.dajet.ru](https://bro.dajet.ru)
+
+**Собрать самому:**
+
+```bash
+git clone https://github.com/dajetbro/dajet-browser
+cd dajet-browser
+./build.sh
+```
+
+## Код и лицензия
+
+Активная разработка: [bestdeejay-design/dajet-browser](https://github.com/bestdeejay-design/dajet-browser).
+
+Dajet — форк [Search](https://github.com/driceroland/Search) (© Office Commun, MIT). Лицензия — [MIT](LICENSE): имя Search и его иконка в дистрибутиве не используются.
