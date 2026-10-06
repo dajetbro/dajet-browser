@@ -1,68 +1,46 @@
+<picture><img src="assets/header.svg" alt="Dajet"></picture>
+
 # Dajet
 
-Молчит в сеть. Говорит стилем.
+**Silence, styled.** — a quiet browser for macOS. ~7 MB · WebKit · free.
 
-**~6 MB** · macOS 14+ · WebKit · бесплатно
+Open Dajet. A screen. One input line. Nothing else.
 
-![Стартовый экран Dajet — чёрный экран и строка ввода](.github/screenshot.png)
+**🌐 Versions:** [English](README.md) · [Русский](README.ru.md)
 
-*Стартовый экран Dajet (демо, направление A — [docs/CHOICE.md](docs/CHOICE.md)). Живая версия: [docs/demo-start.html](docs/demo-start.html).*
+## What it is
 
----
+Dajet holds a position big browsers can't copy: **a home that stays silent**.
 
-## Что это
+Launch it, open Network Monitor — zero connections. Nothing leaves the machine without your action. Not a promise: a verifiable claim, part of the release checklist.
 
-Ты открываешь Dajet. Экран. Одна строка ввода. Ничего больше.
+- No telemetry, no accounts, no cloud
+- No ads, no "online widgets" (weather, news, rates)
+- Updates — on request only
 
-Вводишь адрес — ты на странице. Вводишь слова — ты ищешь. Никаких боковых меню, промо-плиток, «советов дня» и вкладок, которые на тебя смотрят.
+## What it can
 
-## Принцип
-
-Dajet занимает позицию, которую большие браузеры не могут скопировать: **дом, который молчит**.
-
-Открой Network Monitor. Запусти Dajet. Ноль соединений. Без твоего действия — ничего не уходит в сеть. Это не обещание. Это проверяемое заявление, и оно входит в релиз-чеклист.
-
-- Нет телеметрии
-- Нет аккаунтов и облака
-- Нет рекламы
-- Нет «онлайн-виджетов» (погода, новости, курсы)
-- Обновления — только по запросу
-
-## Что умеет
-
-- **Одна строка ввода** — адрес или поиск. Подсказки из твоей истории, ничего не уходит в сеть до Enter
-- **Вкладки** — `⌘T` новая, `⌘W` закрыть. Сверху или слева
-- **Закреплённые вкладки** — сожмутся до иконки, не мешают
-- **Split View** — две страницы рядом (`⌥⌘N`)
-- **Блокировщик рекламы** — на уровне сети, до рендера
-- **Скрой элемент навсегда** — `⇧⌘H`, кликни на cookie-баннер
-- **Режим чтения** — `⇧⌘R`
-- **Плавающее видео** — `⇧⌘P`
-- **Пароли в macOS keychain** — зашифровано системой
-- **Chrome-расширения** — вставь ссылку Chrome Web Store (macOS 15.4+)
-
-## Стартовый экран
-
-Сейчас — чистая тишина: пустой экран и строка ввода.
-
-Форма стартового экрана — открытое решение проекта. Варианты и демо: [docs/CHOICE.md](docs/CHOICE.md) · [docs/DEMOS.md](docs/DEMOS.md). Темы и виджеты отложены и не входят в первую версию.
+- **One input line** — address or search; suggestions from local history, nothing leaves before Enter
+- **Ad blocker** — at network level, before render
+- **Hide element forever** — `⇧⌘H`, click a cookie banner away
+- **Reader mode** `⇧⌘R` · **Floating video** `⇧⌘P`
+- **Split View** — two pages side by side (`⌥⌘N`); pinned tabs shrink to an icon
+- **Passwords** in macOS keychain — encrypted by the system
+- **Chrome extensions** — paste a Chrome Web Store link (macOS 15.4+)
+- **Private tab** (`⇧⌘N`) — leaves nothing after closing
 
 ## Privacy
 
-| Что | Где | Кто может читать |
+| What | Where | Who can read |
 |---|---|---|
-| Пароли | macOS login keychain | Dajet |
-| История, закладки | `~/Library/Application Support/Dajet/` | Ты |
-| Cookies | хранилище WebKit | Сайты |
-| Всё остальное | Нигде | — |
+| Passwords | macOS login keychain | Dajet |
+| History, bookmarks | `~/Library/Application Support/Dajet/` | You |
+| Cookies | WebKit storage | Sites |
+| Everything else | Nowhere | — |
 
-Приватная вкладка (`⇧⌘N`) не оставляет ничего после закрытия.
+## Install
 
-## Установка
-
-**Скачать:** [bro.dajet.ru](https://bro.dajet.ru)
-
-**Собрать самому:**
+**Download:** [bro.dajet.ru](https://bro.dajet.ru) · **Build from source:**
 
 ```bash
 git clone https://github.com/dajetbro/dajet-browser
@@ -70,8 +48,14 @@ cd dajet-browser
 ./build.sh
 ```
 
-## Код и лицензия
+CI checks run on [GitHub Actions](https://github.com/bestdeejay-design/dajet-browser/actions). Live site: [bro.dajet.ru](https://bro.dajet.ru).
 
-Активная разработка: [bestdeejay-design/dajet-browser](https://github.com/bestdeejay-design/dajet-browser).
+## License
 
-Dajet — форк [Search](https://github.com/driceroland/Search) (© Office Commun, MIT). Лицензия — [MIT](LICENSE): имя Search и его иконка в дистрибутиве не используются.
+MIT — [LICENSE](LICENSE). Development: [bestdeejay-design/dajet-browser](https://github.com/bestdeejay-design/dajet-browser).
+
+---
+
+<picture><img src="assets/footer.svg" alt=""></picture>
+
+*Dajet is a fork of [Search](https://github.com/driceroland/Search) (© Office Commun, MIT). The Search name and icon are not used in the distribution.*
